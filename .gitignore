@@ -42,6 +42,7 @@ ExportedObj/
 .consulo/
 *.csproj
 *.unityproj
+.vscode/
 *.sln
 *.slnx
 *.suo
