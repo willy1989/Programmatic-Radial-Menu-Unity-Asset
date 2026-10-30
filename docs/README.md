@@ -80,23 +80,23 @@ For example, selecting an item in the menu goes like this:
 
 #### Domain Class
 
-The domain owns and applies the business logic. Source: [`Domain.cs`](../Assets/Core/Scripts/Domain.cs).
+[`Domain.cs`](../Assets/Core/Scripts/Domain.cs) owns and applies the business logic.
 
 #### Controller Class
 
-The controller has 2 responsibilities. First, it listens for the player's input: pressing a button, moving the mouse. Second, it uses that input to ask the domain to change its state: selecting an item, for instance.
+[`Controller.cs`](../Assets/Core/Scripts/Controller.cs) has 2 responsibilities. First, it listens for the player's input: pressing a button, moving the mouse. Second, it uses that input to ask the domain to change its state: selecting an item, for instance.
 
-You can create your own ways of interacting with the menu by extending the `Controller` class. Source: [`Controller.cs`](../Assets/Core/Scripts/Controller.cs).
+You can create your own ways of interacting with the menu by extending the class.
 
 I created 3 examples you can refer to:
 
-- `Controller_Point_Select_And_Trigger`: select an item by pointing at it and trigger it immediately. Source: [`Controller_Point_Select_And_Trigger.cs`](../Assets/Core/Scripts/Controller_Point_Select_And_Trigger.cs).
-- `Controller_Point_Select_Then_Trigger`: select an item by pointing at it, then trigger it with a different button. Source: [`Controller_Point_Select_Then_Trigger.cs`](../Assets/Core/Scripts/Controller_Point_Select_Then_Trigger.cs).
-- `Controller_Cycle_Select_Then_Trigger`: select an item by cycling through all the items, then trigger it with a different button. Source: [`Controller_Cycle_Select_Then_Trigger.cs`](../Assets/Core/Scripts/Controller_Cycle_Select_Then_Trigger.cs).
+- [`Controller_Point_Select_And_Trigger.cs`](../Assets/Core/Scripts/Controller_Point_Select_And_Trigger.cs): select an item by pointing at it and trigger it immediately.
+- [`Controller_Point_Select_Then_Trigger.cs`](../Assets/Core/Scripts/Controller_Point_Select_Then_Trigger.cs): select an item by pointing at it, then trigger it with a different button.
+- [`Controller_Cycle_Select_Then_Trigger.cs`](../Assets/Core/Scripts/Controller_Cycle_Select_Then_Trigger.cs): select an item by cycling through all the items, then trigger it with a different button.
 
 #### UI Class
 
-The UI class reacts to changes in the domain's state by updating its graphics. A selected item in the domain will result in its associated icon being highlighted in the UI.Source: [`UI.cs`](../Assets/Core/Scripts/UI/UI.cs).
+[`UI.cs`](../Assets/Core/Scripts/UI/UI.cs) reacts to changes in the domain's state by updating its graphics. A selected item in the domain will result in its associated icon being highlighted in the UI.
 
 ## Limitations
 
