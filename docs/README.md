@@ -96,7 +96,7 @@ I created 3 examples you can refer to:
 
 #### UI Class
 
-The UI class reacts to changes in the domain's state by updating its graphics. A selected item in the domain will result in its associated icon being highlighted in the UI.Source: [`UI.cs`](../Assets/Core/Scripts/UI/.cs).
+The UI class reacts to changes in the domain's state by updating its graphics. A selected item in the domain will result in its associated icon being highlighted in the UI.Source: [`UI.cs`](../Assets/Core/Scripts/UI/UI.cs).
 
 ## Limitations
 
